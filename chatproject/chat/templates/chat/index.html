@@ -1,12 +1,8 @@
-<!-- chat/templates/chat/index.html -->
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8"/>
-    <title>Chat Rooms</title>
-</head>
+{% extends 'base.html' %}
+{% block content %}
+
 <body>
-    What chat room would you like to enter?<br>
+    напишите название лобби для входа(ВНИМАНИЕ: ДЛЯ БЕЗОПАСНОСТИ ИСПОЛЬЗУЙТЕ СЛОЖНОЕ НАЗВАНИЕ)<br>
     <input id="room-name-input" type="text" size="100"><br>
     <input id="room-name-submit" type="button" value="Enter">
 
@@ -24,4 +20,4 @@
         };
     </script>
 </body>
-</html>
+{% endblock %}
